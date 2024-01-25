@@ -3,7 +3,7 @@
 A CLI tool to automatically submit Github repos to the Veracode platform for scanning.
 Supports all non-compilable languages that only require zipping the source files.
 
-test Text13
+test Text1323
 
 Commands:
 
