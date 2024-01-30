@@ -58,7 +58,7 @@ jobs:
     secrets: inherit
 
   Deploy_to_test:
-    needs: [veracode-iac-secrets-scan]
+    needs: [pipeline_scan]
     runs-on: ubuntu-latest
     environment:
       name: Test_3
