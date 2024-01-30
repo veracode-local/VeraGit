@@ -57,7 +57,7 @@ jobs:
       modules_to_scan: ${{ github.event.client_payload.modules_to_scan }}
     secrets: inherit
 
-Deploy_to_test:
+  Deploy_to_test:
     needs: [veracode-iac-secrets-scan]
     runs-on: ubuntu-latest
     environment:
