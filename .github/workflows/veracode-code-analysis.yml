@@ -13,7 +13,8 @@ on:
             java-maven-policy-scan, 
             java-gradle-policy-scan, 
             source-code-policy-scan, 
-            go-policy-scan]
+            go-policy-scan,
+            test_event]
 
 jobs:
   register:
