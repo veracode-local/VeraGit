@@ -31,6 +31,7 @@ veracode_static_scan:
   policy: 'Veracode Recommended Medium + SCA'
   compile_locally: true
   local_compilation_workflow: test_event
+  create_issue: true
 
 veracode_sca_scan:   
   # Please only specify trigger:true for either push event or 
