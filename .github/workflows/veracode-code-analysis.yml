@@ -41,6 +41,8 @@ jobs:
   pipeline_scan:
     # needs the build step before this job will start running
     needs: build
+    permissions:
+      issues: write
     if: contains(github.event.action, 'pipeline')
     uses: ./.github/workflows/veracode-pipeline-scan.yml
     with:
