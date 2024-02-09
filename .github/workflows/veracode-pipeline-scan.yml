@@ -39,3 +39,20 @@ jobs:
           veracode_policy_name: ${{ inputs.policy_name }}
           file: ./veracode_artifact_directory/${{ env.veracode_artifact }}
           fail_build: true
+
+      # This step will import the flaws from the step above
+  import-issues:
+    needs: pipeline_scan
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: get scan results
+        uses: actions/download-artifact@v3
+        with:
+          name: filtered-results
+
+      - name: import flaws as issues
+        uses: veracode/veracode-flaws-to-issues@v2.1.19
+        with:
+          scan-results-json: 'filtered_results.json'
