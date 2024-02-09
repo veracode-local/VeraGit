@@ -30,6 +30,7 @@ jobs:
         
   build:
     needs: register
+    if: always()
     uses: ./.github/workflows/veracode-build-artifact-for-scanning.yml
     with:
       repository: ${{ github.event.client_payload.repository.full_name }}
