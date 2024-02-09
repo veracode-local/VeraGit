@@ -59,13 +59,13 @@ jobs:
       modules_to_scan: ${{ github.event.client_payload.modules_to_scan }}
     secrets: inherit
 
-  Deploy_to_test:
-    needs: [register]
-    runs-on: ubuntu-latest
-    environment:
-      name: Test_3
-      url: www.veracode.com
-    name: Veracode IaC/ Deploy_to_test
-    steps:
-     - name: 'no-op'
-       run: echo "::deployed to test environment"
+  # Deploy_to_test:
+  #   needs: [register]
+  #   runs-on: ubuntu-latest
+  #   environment:
+  #     name: Test_3
+  #     url: www.veracode.com
+  #   name: Veracode IaC/ Deploy_to_test
+  #   steps:
+  #    - name: 'no-op'
+  #      run: echo "::deployed to test environment"
