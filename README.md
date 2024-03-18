@@ -3,7 +3,7 @@
 A CLI tool to automatically submit Github repos to the Veracode platform for scanning.
 Supports all non-compilable languages that only require zipping the source files.
 
-test Tex231
+test Tex231as
 Commands:23
 
 Creates a app profile for easy rescanning: 
