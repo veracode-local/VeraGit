@@ -4,7 +4,7 @@ A CLI tool to automatically submit Github repos to the Veracode platform for sca
 Supports all non-compilable languages that only require zipping the source files.
 
 test Tex231as
-Commands:23ajkls
+Commands:23
 
 Creates a app profile for easy rescanning: 
 create --id veracode_app_id --name name_for_the_profile --url the_link_to_the_.git_url --key github_oath_key(optional, required for private repositories) --public (use if repository is public)
